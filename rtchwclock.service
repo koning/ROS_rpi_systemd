@@ -3,6 +3,7 @@ Description=Real time clock
 After=network.target
 
 [Service]
+TYPE=oneshot
 Environment=DEVTYPE="ds3231"
 Environment=DEVADDR="0x68"
 ExecStartPre=echo $DEVTYPE $DEVADDR > /sys/class/i2c-adapter/i2c-1/new_device
