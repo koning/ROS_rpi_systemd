@@ -17,9 +17,9 @@ cd ROS_rpi_systemd
 
 sudo cp *.service *.py /etc/systemd/system
 
-Copy the roscore.defaults file to /etc/defaults:
+Copy the roscore.default file to /etc/default:
 
-sudo cp roscore.defaults /etc/defaults/roscore
+sudo cp roscore.default /etc/default/roscore
 
 
 Enable the services:
