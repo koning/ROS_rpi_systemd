@@ -1,0 +1,14 @@
+[Unit]
+Description=Real time clock
+After=network.target
+
+[Service]
+Environment=DEVTYPE="ds3231"
+Environment=DEVADDR="0x68"
+ExecStartPre=echo $DEVTYPE $DEVADDR > /sys/class/i2c-adapter/i2c-1/new_device
+ExecStart=/sbin/hwclock -s
+ExecStop=echo $DEVADDR > /sys/class/i2c-adapter/i2c-1/delete_device
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target

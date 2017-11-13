@@ -1,0 +1,10 @@
+[Unit]
+Description=Shutdown the raspberry pi when the give button is pressed
+
+[Service]
+Type=simple
+ExecStart=/etc/systemd/system/shutdown_pi.py
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
