@@ -1,9 +1,9 @@
 ROS_DISTRO=kinetic
-ROS_ROOT=/opt/ros/${ROS_DISTRO}/
-ROS_PACKAGE_PATH=/opt/ros/${ROS_DISTRO}/share
+ROS_ROOT=/opt/ros/kinetic/
+ROS_PACKAGE_PATH=/opt/ros/kinetic/share
 ROS_PORT=11311
 ROS_MASTER_URI=http://localhost:11311
-CMAKE_PREFIX_PATH=/opt/ros/${ROS_DISTRO}/
-PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ros/${ROS_DISTRO}/bin
-LD_LIBRARY_PATH=/opt/ros/${ROS_DISTRO}/lib
-PYTHONPATH=/opt/ros/${ROS_DISTRO}/lib/python2.7/site-packages
+CMAKE_PREFIX_PATH=/opt/ros/kinetic/
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ros/kinetic/bin
+LD_LIBRARY_PATH=/opt/ros/kinetic/lib
+PYTHONPATH=/opt/ros/kinetic/lib/python2.7/dist-packages

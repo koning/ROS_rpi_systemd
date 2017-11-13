@@ -4,7 +4,6 @@ After=network.target
 
 [Service]
 EnvironmentFile=/etc/default/roscore
-#ExecStartPre=/bin/touch ${CMAKE_PREFIX_PATH}/.catkin
 ExecStart=/opt/ros/kinetic/bin/roscore -p $ROS_PORT
 Restart=on-abort
 
