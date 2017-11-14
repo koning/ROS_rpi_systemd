@@ -4,7 +4,9 @@ These systemd files are for starting roscore, a real time
 clock  and a shutdown poller on Ubuntu for raspberry pi.
 
 roscore.service    - Start roscore when pi starts
+
 rtchwclock.service - Set time from a real time hwclock.
+
 pishutdown.service - Run a python daemon to poll for a shutdown event.
 
 
